@@ -26,6 +26,7 @@ function my_twide_daily_event_func() {
     // Loop through all posts to create an array of posts
     $latest = new WP_Query( array (
     	'post_type'	=> 'post',
+ //    'category_name' => 'my-slug, your-slug, another-slug', // Uncomment and change slugs to limit republishing to posts within a specific category
     	'posts_per_page'        => -1,
     	'fields' => 'ids'
     ));
